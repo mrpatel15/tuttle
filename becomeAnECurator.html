@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Tuttle View</title>
+<!--  -->
+<link rel="shortcut icon" href="img/tvcustom/favicon/favicon.png">
+<meta name="description" content="A curated social shopping experience">
+
+<!-- CSS -->
+<link href="css/preload.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/yamm.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-switch.min.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="css/animate.min.css" rel="stylesheet" media="screen">
+<link href="css/slidebars.css" rel="stylesheet" media="screen">
+<link href="css/lightbox.css" rel="stylesheet" media="screen">
+<link href="css/jquery.bxslider.css" rel="stylesheet">
+<link href="css/syntaxhighlighter/shCore.css" rel="stylesheet" media="screen">
+<link href="css/style-blue4.css" rel="stylesheet" media="screen" title="default">
+<link href="css/width-full.css" rel="stylesheet" media="screen" title="default">
+<link href="css/buttons.css" rel="stylesheet" media="screen">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+<body>
+<div id="sb-site">
+  <div class="boxed">
+    <header id="header-full-top" class="hidden-xs header-full">
+      <div class="container">
+        <div class="header-full"> <!-- 04-12--2015 SRH: Was <div class="header-full-title"> -->
+          <div> <a href="home_full.html" target="_top"><img src="img/tvcustom/image/tuttleview-woodmark-with-icon.png" alt="Tuttle View" title="Tuttle View"></a> </div>
+          <nav class="top-nav">
+            <ul class="top-nav-social hidden-sm">
+              <li><a href="https://www.twitter.com/" class="animated fadeIn animation-delay-6 twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" class="animated fadeIn animation-delay-7 pinterest"><i class="fa fa-pinterest"></i></a></li>
+              <li><a href="https://www.facebook.com/" class="animated fadeIn animation-delay-8 facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.youtube.com/" class="animated fadeIn animation-delay-9 youtube"><i class="fa fa-youtube-square"></i></a></li>
+              <li><a href="https://www.instagram.com/" class="animated fadeIn animation-delay-10 instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <div class="dropdown animated fadeInDown animation-delay-11"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Login</a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-login-box animated fadeInUp">
+                <form role="form">
+                  <h4 style="font-family: Arial; color: #ffcc00; font-size: 20px;">Login Form</h4>
+                  <div class="form-group">
+                    <div class="input-group login-input"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <br>
+                    <div class="input-group login-input"> <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                      <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="checkbox pull-left">
+                      <label>
+                        <input type="checkbox">
+                      </label>
+                      <label style="font-family: Arial; color: #ffcc00; font-size: 18px;">Remember me </label>
+                    </div>
+                    <button type="submit" class="btn btn-ar btn-primary pull-right">Login</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- dropdown -->
+            
+            <div class="dropdown animated fadeInDown animation-delay-12"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-search-box animated fadeInUp">
+                <form role="form">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <button class="btn btn-ar btn-primary" type="button">Go!</button>
+                    </span> </div>
+                  <!-- /input-group -->
+                </form>
+              </div>
+            </div>
+            <!-- dropdown --> 
+          </nav>
+        </div>
+        <!-- container --> 
+      </div>
+    </header>
+    <!-- header-full --> 
+  </div>
+  <nav class="navbar navbar-static-top navbar-default navbar-header-full" role="navigation" id="header">
+    <div class="container"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i> </button>
+        <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="index.html">Tuttle <span>View</span></a> </div>
+      <!-- navbar-header --> 
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="pull-right"> <a href="javascript:void(0);" class="sb-icon-navbar sb-toggle-right"><i class="fa fa-bars"></i></a> </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu dropdown-menu-left">
+              <li><a href="index.html">Option 1: Default</a></li>
+              <li><a href="home_services.html">Option 2: Services</a></li>
+              <li><a href="home_full.html">Option 3: Full Intro</a></li>
+              <li><a href="home_only_full.html">Option 4: Only Full Intro</a></li>
+              <li><a href="home_news.html">Option 5: News</a></li>
+              <li><a href="home_profile.html">Option 6: Professional Profile</a></li>
+              <li><a href="home_plan.html">Option 7: Subscribe <span class="label label-success pull-right">New</span></a></li>
+              <li role="presentation" class="dropdown-header">Header Options</li>
+              <li><a href="configurator.html">Configurator<span class="label label-success pull-right">New</span></a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">UI Elements</a>
+            <ul class="dropdown-menu dropdown-menu-left">
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">CSS</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="css_typography.html">Typography</a></li>
+                  <li><a href="css_headers.html">Headers</a></li>
+                  <li><a href="css_dividers.html">Dividers</a></li>
+                  <li><a href="css_blockquotes.html">Blockquotes</a></li>
+                  <li><a href="css_forms.html">Forms</a></li>
+                  <li><a href="css_tables.html">Tables</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Buttons</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="btn_basic_buttons.html">Basic Buttons</a></li>
+                  <li><a href="btn_library_buttons.html">Buttons Library</a></li>
+                  <li><a href="btn_social_buttons.html">Social Buttons</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Icons</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="icons_artificial_reason.html">Artificial Reason Icons</a></li>
+                  <li><a href="icons_glyph.html">Glyphicons Icons</a></li>
+                  <li><a href="icons_awesome.html">Font Awesome</a></li>
+                  <li><a href="icons_social.html">Social Icons</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Components</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="components_dropdowns.html">Components Dropdowns</a></li>
+                  <li><a href="components_panels.html">Panels</a></li>
+                  <li><a href="components_lists.html">Lists</a></li>
+                  <li><a href="components_paginations.html">Paginations</a></li>
+                  <li><a href="components_labels_badges.html">Labels and Badges</a></li>
+                  <li><a href="components_alerts_wells.html">Alerts and Wells</a></li>
+                  <li><a href="components_thumbnails.html">Thumbnails</a></li>
+                  <li><a href="components_modals.html">Modals</a></li>
+                  <li><a href="components_progress_bars.html">Progress Bars</a></li>
+                  <li><a href="components_tooltip_popover.html">Tooltip &amp; Popover</a></li>
+                </ul>
+              </li>
+              <li><a href="collapses_tabs.html">Collapses &amp; Tabs</a></li>
+              <li><a href="components_vertical_tabs.html">Vertical Tabs <span class="label label-success pull-right">New</span></a></li>
+              <li><a href="components_switch.html">Switch Controls <span class="label label-success pull-right">New</span></a></li>
+              <li><a href="content_box.html">Contents Box</a></li>
+              <li><a href="carousels.html">Carousels</a></li>
+              <li><a href="charts.html">Charts &amp; CountDowns</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu dropdown-menu-left">
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">About us &amp; Team</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="page_about.html" class="active">About us Option 1</a></li>
+                  <li><a href="page_about2.html">About us Option 2</a></li>
+                  <li><a href="page_about3.html">About us &amp; Team</a></li>
+                  <li class="divider"></li>
+                  <li><a href="page_team.html">Our Team Option 1</a></li>
+                  <li><a href="page_team2.html">Our Team Option 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Form</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="page_contact.html">Contact Option 1</a></li>
+                  <li><a href="page_contact2.html">Contact Option 2</a></li>
+                  <li class="divider"></li>
+                  <li><a href="page_login.html">Login Integrated</a></li>
+                  <li><a href="page_login_full.html">Login Full Page</a></li>
+                  <li class="divider"></li>
+                  <li><a href="page_login_register.html">Login and Register</a></li>
+                  <li><a href="page_register.html">Register Option 1</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Profiles</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="page_profile.html">User Profile Option 1</a></li>
+                  <li><a href="page_profile2.html">User Profile Option 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Error</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="page_404.html">Error 404 Full Page</a></li>
+                  <li><a href="page_404_2.html">Error 404 Integrated</a></li>
+                  <li><a href="page_500.html">Error 500 Full Page</a></li>
+                  <li><a href="page_500_2.html">Error 500 Integrated</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Bussiness &amp; Products</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="page_testimonial.html">Testimonials</a></li>
+                  <li><a href="page_clients.html">Our Clients</a></li>
+                  <li><a href="page_product.html">Products</a></li>
+                  <li><a href="page_services.html">Services</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Pricing</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="page_pricing.html">Pricing Box</a></li>
+                  <li><a href="page_pricing-mega.html">Pricing Mega Table</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">FAQ &amp; Support</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="page_support.html">Support Center</a></li>
+                  <li><a href="page_faq.html">FAQ Option 1</a></li>
+                  <li><a href="page_faq2.html">FAQ Option 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Coming Soon</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="page_coming.html">Coming Soon Option 1</a></li>
+                  <li><a href="page_coming2.html">Coming Soon Option 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"> <a href="javascript:void(0);" class="has_children">Timeline</a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="page_timeline_left.html">Timeline Left</a></li>
+                  <li><a href="page_timeline.html">Timeline Center</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu dropdown-menu-left">
+              <li><a href="blog.html">Blog Right Sidebar</a></li>
+              <li><a href="blog_left.html">Blog Left Sidebar</a></li>
+              <li><a href="blog_full.html">Blog Full</a></li>
+              <li><a href="blog2.html">Other Option</a></li>
+              <li class="divider"></li>
+              <li><a href="single.html">Blog Item</a></li>
+              <li><a href="single_full.html">Blog Item Full</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">E-commerce</a>
+            <ul class="dropdown-menu dropdown-menu-left">
+              <li><a href="e-commerce_home.html">E-commerce Home</a></li>
+              <li><a href="e-commerce.html">E-commerce Filters</a></li>
+              <li><a href="e-commerce_product.html">Product</a></li>
+              <li><a href="e-commerce_cart.html">Cart</a></li>
+              <li><a href="e-commerce_event.html">Event</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+            <ul class="dropdown-menu dropdown-menu-left">
+              <li><a href="portfolio_sidebar.html">Portfolio sidebar filters</a></li>
+              <li><a href="portfolio_topbar.html">Portfolio topbar filters</a></li>
+              <li><a href="portfolio_caption_hover.html">Portfolio with captions</a></li>
+              <li class="divider"></li>
+              <li><a href="portfolio_item.html">Portfolio item</a></li>
+              <li><a href="portfolio_item_devices.html">Portfolio item device</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar-collapse --> 
+    </div>
+    <!-- container --> 
+  </nav>
+</div>
+<header class="main-header">
+  <div class="container">
+    <h1 class="page-title">Become An E-Curator&#8482;</h1>
+    <ol class="breadcrumb pull-right">
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Become An E-Curator&#8482;</a></li>
+      <li class="active">Join the Neighborhood</li>
+    </ol>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <p class="slogan text-center animated bounceInLeft animation-delay-12">Discover a job that is as easy as a having a party. <br>
+        Tuttle View Events are <span>friendly</span>, <span>unique</span>, <span>stimulating</span> and <span>lots of fun</span>.</p>
+      <h1 class="right-line no-margin-top">Join the Neighborhood</h1>
+    </div>
+    <div class="col-md-8">
+    <section class="animated fadeInDown animation-delay-8"> <img src="img/demo/team.jpg" class="img-responsive imageborder" alt="Image">
+      <p class="p-lg"></p>
+    </section>
+    <section class="animated fadeIn animation-delay-10">
+    <h3 class="section-title">
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading panel-heading-link"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> BECOME AN E-CURATOR&#8482; </a> </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <p >Build a business <b>FOR YOURSELF BUT NOT BY YOURSELF</b>.
+              Create your own online flexible <strong>E-Social&#8482; shopping business</strong> that connects friends, enriches both your life and the life of others 
+              while celebrating entrepreneurs &amp; skilled artisans.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading panel-heading-link">
+         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed"> YOUR SCHEDULE YOUR CHOICE </a> </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>One hour E-Social&#8482; shopping events <strong>FIT YOUR SCHEDULE</strong>. Earn money curating assortments that <b><u>connect friends online,</u></b> anywhere, 
+            nation-wide, at any time of day or night for <b>FUN</b>.</p>
+            <p>A Tuttle View online event means no extra house cleaning or travel.</p>
+            <p>A Tuttle View 1 hour <b>E-vent&#8482;</b> versus a 2&frac12; hour</span> home party.</p>
+            <p>Tuttle View handles the transactions and delivers products directly to the E-host&#8482; or customers home.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading panel-heading-link"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed"> YOUR MONEY YOUR LIMITS </a> </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>In this business the <b>SKY'S THE LIMIT</b> so you determine what works best for you. If it is a new career you are seeking, supplemental income you are looking for, retirement savings, or
+              money for a family vacation, Tuttle View will help you achieve your goals. Make your dreams come true and have fun doing it.</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+                                tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+                                mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+                                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Earn
+            20% sales commission. Tuttle View events online anywhere, any time, nation wide.</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+                                tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+                                mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+                                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><strong>Unlimited</strong> <strong>coaching commissions </strong>for helping others become curators and for the
+            curators they help. Build your team across the country!<span style="mso-spacerun:yes">&nbsp; </span>Mentor and encourage others as they build their businesses as part of the Tuttle View model.</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+                                tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+                                mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+                                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Personalized
+              training with a mentor and 24/7 on-line resources.</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+                                tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+                                mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+                                style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]> 
+              All you need is a computer with a fast Internet connection and the desire to be part of this exciting and rewarding opportunity.</p>
+            <p class="MsoNormal">How much money you earn is up to you. What would you do with an extra <strong>$500</strong> a month or MORE! What dreams would you make true?</p>
+            <p class=MsoNormal>
+              <o:p>&nbsp;</o:p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading panel-heading-link"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed"> YOUR BUSINESS YOUR WAY </a> </div>
+        <div id="collapseFour" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]> 
+              Pick from a wide assortment of Artisans' products<span
+style="mso-spacerun:yes">&nbsp; </span>: Home, Jewelry, Kids, Kitchen</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-weight:bold'>Enrich the lives of others by bringing friends
+              together around the country, <b><em>not just around the corner</em></b>.</span></p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><b> Enrich the lives of others by coaching them to have their business.</b></p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]> 
+              No inventory to managed. Products delivered directly to the guests’ home or to your hostesses home.</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]> 
+              Build your success kit with products from the stores you choose.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading panel-heading-link"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"> FOR YOURSELF BUT NOT BY YOURSELF </a> </div>
+        <div id="collapseFive" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Build your business <strong>FOR YOURSELF BUT NOT BY YOURSELF.</strong></p>
+            <p>Create your own online <strong>E-Social&#8482; flexible shopping business </strong>that connects friends, enriches your life and others 
+              while celebrating the entrepreneur &amp; artisan.
+              <p>Your Tuttle View E-Mentor&#8482; will prepare you to present products with both skill and confidence and will attend your first event
+               to critque your performance.</p>
+               <p>The entire Tuttle View Staff is standing with you and cheering you on to success. We will be there with you each and every step along 
+               the way and will help you celebrate your effort and success.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading panel-heading-link"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"> OUR TRAINING KITS ENABLE SUCCESS </a> </div>
+        <div id="collapseSix" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l4 level1 lfo4;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]> 
+              Seeing <span class=GramE>is believing</span>! 
+              Videos on how to prepare for an event, run an event, and navigate the web site are always available online 24/7.</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l4 level1 lfo4;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]> 
+              Tailored scripts will be provided for you to curate a successful event. You are guarunteed to sound like a pro!</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l4 level1 lfo4;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]> 
+              E-Curator videos and tutorials are always available to guide and inform you for a successful event!</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l4 level1 lfo4;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style="mso-spacerun:yes">&nbsp;</span>Informative descriptions and videos on products and artisans will help you inform and celebrate the shopping experience.</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading panel-heading-link"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" class="collapsed"> YOU ARE NOT ALONE </a> </div>
+        <div id="collapseSeven" class="panel-collapse collapse">
+          <div class="panel-body"> </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading panel-heading-link"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" class="collapsed"> CURRENT PROMOTION </a> </div>
+        <div id="collapseEight" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p class=MsoNormal>Be a founding Curator! Our first one-hunderd will be special forever!</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo5;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><b>No
+              money to start! </b>Confirm your first six events we will ship your success kit!</p>
+            <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo5;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Arial;
+mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><b
+style='mso-bidi-font-weight:normal'>To qualify;</b> Enroll as an independent
+              contractor and we will send you the<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span> e-<span class=SpellE>vite&#8482;</span> template to get started. 
+              Confirm your Tuttle View event dates with a minimum of 7 friends per show 
+              and your success kit will be shipped at no charge.<span></span>The success kit expense will be earned and deducted through your commission earnings.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading panel-heading-link"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"> OPPORTUNITY CALL </a> </div>
+        <div id="collapseNine" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Create your own flexible <strong>E-Social&#8482; shopping online business </strong>that connects friends, 
+              enriches your life and others while celebrating the entrepreneur &amp; artisan</p>
+            <p>Join us for a 30 minute call to learn more about the rewards of having your own Tuttle View business and get answers to all of your questions.<b> Email <strong>Liz</strong> at <a href="mailto:Lhaggerty@tuttleview.com">Lhaggerty@tuttleview.com</a> to set up your call.</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+  </div>
+</div>
+<!-- container -->
+
+<aside id="footer-widgets"> <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="form-group">
+          <div class="input-group">
+            <input class="form-control" type="text" title="newsletter" name="parameterValue" placeholder="NEWSLETTER SIGNUP">
+            <span class="input-group-btn">
+            <button class="btn btn-ar btn-danger">SUBMIT</button>
+            </span> </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <h3 class="footer-widget-title" style="font-family: Arial; color: #ffcc00; font-size: 20px;">SITELINKS</h3>
+        <ul class="list-unstyled four_cols">
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="index.html">ABOUT US</a></li>
+          <li><a href="index.html">CONTACT US</a></li>
+          <li><a href="index.html">BLOG</a></li>
+          <li><a href="index.html">PRIVACY POLICY</a></li>
+          <li><a href="index.html">FAQS</a></li>
+          <li><a href="index.html">CUSTOMER<br>
+            TESTIMONIALS</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h3 class="footer-widget-title" style="font-family: Arial; color: #ffcc00; font-size: 20px;">BRANDS</h3>
+        <img src="img/tvcustom/brand/Brands-Group.png" alt=""> </div>
+      <div class="col-sm-2">
+        <h3 class="footer-widget-title" style="font-family: Arial; color: #ffcc00; font-size: 20px;">SUPPORT</h3>
+        <ul class="list-unstyled four_cols">
+          <li><a href="index.html" class="active">ABOUT US</a></li>
+          <li><a href="index.html">CONTACT US</a></li>
+          <li><a href="index.html">BLOG</a></li>
+          <li><a href="index.html">PRIVACY POLICY</a></li>
+          <li><a href="index.html">FAQS</a></li>
+          <li><a href="index.html">CUSTOMER TESTIMONIALS</a></li>
+        </ul>
+      </div>
+      <!-- contact info -->
+      <div class="col-sm-2">
+        <h3 class="footer-widget-title" style="font-family: Arial; color: #ffcc00; font-size: 20px;">CONTACT INFO</h3>
+        <address>
+        <strong>TUTTLE VIEW LLC</strong><br>
+        4703 Perth Drive<br>
+        Naperville, IL 60564<br>
+        <abbr title="Phone">Phone:</abbr> (717) 517-4067
+        </address>
+        <h3 style="font-family: Arial; color: #ffcc00; font-size: 20px;">SOCIAL</h3>
+        <span>
+        <h3> <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a> <a href="https://www.pinterest.com/" class="pinterest"><i class="fa fa-pinterest"></i></a> <a href="https://www.twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a> <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube-square"></i></a> <a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a> </h3>
+        </span> </div>
+      <!-- contact info --> 
+    </div>
+    <!-- row --> 
+  </div>
+  <!-- container --> 
+</aside>
+<!-- footer-widgets -->
+
+<footer id="footer">
+  <h2><img src="img/tvcustom/favicon/favicon-white-stem.png" height="48" width="48" alt="ipso"> ABOUT TUTTLE VIEW</h2>
+  <p>An exciting e-curated social shopping platform to help entrepeneurs and artisans to connect and achieve their dreams.</p>
+  <br>
+  <p>&copy; 2015 <a href="#">TUTTLE VIEW</a>, LLC. All rights reserved.<br>
+    Web Design by:<a href="http://ipsoCreative.com"> <img src="img/tvcustom/graphic/IPSO.png" height="12" width="35" alt="ipso"></a></p>
+  <p>Site by:<a href="http://hggrtystvn77.github.io/slkproserve"> <img src="img/tvcustom/graphic/slkproserve.png" height="12" width="75" alt="slkproserve"></a></p>
+</footer>
+
+<!-- boxed --> 
+<!-- sb-site -->
+
+<div class="sb-slidebar sb-right">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search...">
+    <span class="input-group-btn">
+    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+    </span> </div>
+  <!-- /input-group -->
+  
+  <h2 class="slidebar-header no-margin-bottom">Navigation</h2>
+  <ul class="slidebar-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio_topbar.html">Portfolio</a></li>
+    <li><a href="page_about3.html">About us</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="page_contact.html">Contact</a></li>
+  </ul>
+  <h2 class="slidebar-header">Social Media</h2>
+  <div class="slidebar-social-icons"> <a href="https://www.twitter.com/" class="social-icon-ar twitter"><i class="fa fa-twitter"></i></a> <a href="https://www.pinterest.com/" class="social-icon-ar pinterest"><i class="fa fa-pinterest"></i></a> <a href="https://www.facebook.com/" class="social-icon-ar facebook"><i class="fa fa-facebook"></i></a> <a href="https://www.youtube.com/" class="social-icon-ar youtube"><i class="fa fa-youtube-square"></i></a> <a href="https://www.instagram.com/" class="social-icon-ar instagram"><i class="fa fa-instagram"></i></a> <a href="https://www.wordpress.com/" class="social-icon-ar wordpress"><i class="fa fa-wordpress"></i></a> <a href="https://www.linkedin.com/" class="social-icon-ar linkedin"><i class="fa fa-linkedin"></i></a> <a href="https://www.flickr.com/" class="social-icon-ar flickr"><i class="fa fa-flickr"></i></a> <a href="https://www.vine.com/" class="social-icon-ar vine"><i class="fa fa-vine"></i></a> </div>
+</div>
+<!-- sb-slidebar sb-right -->
+<div id="back-top"> <a href="#header"><i class="fa fa-chevron-up"></i></a> </div>
+<!-- Scripts --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-switch.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/slidebars.js"></script> 
+<script src="js/jquery.bxslider.min.js"></script> 
+<script src="js/holder.js"></script> 
+<script src="js/buttons.js"></script> 
+<script src="js/styleswitcher.js"></script> 
+<script src="js/jquery.mixitup.min.js"></script> 
+<script src="js/circles.min.js"></script> 
+
+<!-- Syntaxhighlighter --> 
+<script src="js/syntaxhighlighter/shCore.js"></script> 
+<script src="js/syntaxhighlighter/shBrushXml.js"></script> 
+<script src="js/syntaxhighlighter/shBrushJScript.js"></script> 
+<script src="js/app.js"></script>
+</body>
+</html>

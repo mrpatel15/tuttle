@@ -1,0 +1,14 @@
+/* CSS declarations go here */
+body{
+  text-align:center;
+}
+#chatText{
+  text-align: left;
+  padding: 8px;
+  margin-right: auto;
+  margin-left:auto;
+  border: silver solid 1px;
+  width: 50%;
+  height: 400px;
+  overflow-y: scroll;
+}

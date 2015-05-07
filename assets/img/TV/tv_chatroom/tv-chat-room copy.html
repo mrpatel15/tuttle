@@ -1,0 +1,30 @@
+<head>
+  <title>chatterbox</title>
+</head>
+
+<body>
+  {{> head}}
+  {{> body}}
+  {{> foot}}
+</body>
+
+<template name="head">
+  <h1>Welcome to Tuttle View Chatterbox</h1>
+  <hr/>
+</template>
+
+<template name="body">
+  <div id="chatText">
+   {{#each messages}}
+     <p><b>{{userTag}}</b> - {{text}}</p>
+     <hr/>
+   {{/each}}
+  </div>
+  <br/>
+  <input type="text" id="userText"/><button id="sendBtn" type="button">Send</button>
+  <hr/>
+</template>
+
+<template name="foot">
+  <p>Created by {{creator}} {{year}}</p>
+</template>
